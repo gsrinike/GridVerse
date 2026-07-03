@@ -16,4 +16,6 @@ docker compose -f docker/docker-compose.yml up --build
 
 Frontend builds are available per GUI module with `npm ci && npm run build`.
 
-See [docs/architecture.md](docs/architecture.md) and each module README for ownership and boundaries.
+See [doc.arch/architecture.md](doc.arch/architecture.md), the
+[migration validation playbook](doc.arch/migration/playbook.md), and each module
+README for ownership and boundaries.
