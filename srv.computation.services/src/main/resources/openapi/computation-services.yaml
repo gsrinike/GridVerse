@@ -1,0 +1,7 @@
+openapi: 3.0.3
+info: {title: GridVerse Computation Services, version: 1.0.0}
+paths:
+  /api/v1/computations/load-flow: {post: {summary: Run load flow, responses: {'200': {description: Result}}}}
+  /api/v1/computations/security-analysis: {post: {summary: Run N-1 security analysis, responses: {'200': {description: Result}}}}
+  /api/v1/computations/sensitivity-analysis: {post: {summary: Calculate current sensitivities for PST variables, responses: {'200': {description: Result}}}}
+  /api/v1/computations/rerun: {post: {summary: Rerun load flow and security analysis after actions, responses: {'200': {description: Result}}}}

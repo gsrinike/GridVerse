@@ -1,0 +1,7 @@
+eu/gridverse/srv/rsa/services/workflow/JdbcWorkflowMetadataRepository.class
+eu/gridverse/srv/rsa/services/api/RsaController.class
+eu/gridverse/srv/rsa/services/config/RsaConfiguration$1.class
+eu/gridverse/srv/rsa/services/workflow/WorkflowMetadata.class
+eu/gridverse/srv/rsa/services/workflow/RsaWorkflowService.class
+eu/gridverse/srv/rsa/services/RsaServicesApplication.class
+eu/gridverse/srv/rsa/services/config/RsaConfiguration.class

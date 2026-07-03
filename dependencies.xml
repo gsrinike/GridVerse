@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eu.gridverse</groupId><artifactId>gridverse-dependencies</artifactId>
+  <version>0.1.0-SNAPSHOT</version><packaging>pom</packaging>
+  <properties>
+    <version.java>21</version.java><version.spring-boot>3.3.7</version.spring-boot>
+    <version.springdoc>2.6.0</version.springdoc><version.minio>8.5.12</version.minio>
+    <version.camunda>7.22.0</version.camunda><version.junit>5.11.4</version.junit>
+    <version.mockito>5.15.2</version.mockito><version.compiler>3.13.0</version.compiler>
+    <version.powsybl>2026.0.0</version.powsybl>
+    <version.powsybl-network-store>1.46.0</version.powsybl-network-store>
+    <version.surefire>3.5.2</version.surefire><version.frontend>1.15.1</version.frontend>
+    <maven.compiler.release>${version.java}</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencyManagement><dependencies>
+    <dependency><groupId>com.powsybl</groupId><artifactId>powsybl-dependencies</artifactId><version>${version.powsybl}</version><type>pom</type><scope>import</scope></dependency>
+    <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-dependencies</artifactId><version>${version.spring-boot}</version><type>pom</type><scope>import</scope></dependency>
+    <dependency><groupId>org.springdoc</groupId><artifactId>springdoc-openapi-starter-webmvc-ui</artifactId><version>${version.springdoc}</version></dependency>
+    <dependency><groupId>io.minio</groupId><artifactId>minio</artifactId><version>${version.minio}</version></dependency>
+    <dependency><groupId>org.camunda.bpm.springboot</groupId><artifactId>camunda-bpm-spring-boot-starter</artifactId><version>${version.camunda}</version></dependency>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>${version.junit}</version></dependency>
+    <dependency><groupId>org.mockito</groupId><artifactId>mockito-junit-jupiter</artifactId><version>${version.mockito}</version></dependency>
+    <dependency><groupId>com.powsybl</groupId><artifactId>powsybl-network-store-client</artifactId><version>${version.powsybl-network-store}</version></dependency>
+  </dependencies></dependencyManagement>
+  <build><pluginManagement><plugins>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>${version.compiler}</version><configuration><parameters>true</parameters></configuration></plugin>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>${version.surefire}</version><configuration><useModulePath>false</useModulePath></configuration></plugin>
+    <plugin><groupId>org.springframework.boot</groupId><artifactId>spring-boot-maven-plugin</artifactId><version>${version.spring-boot}</version><executions><execution><goals><goal>repackage</goal></goals></execution></executions></plugin>
+    <plugin><groupId>com.github.eirslett</groupId><artifactId>frontend-maven-plugin</artifactId><version>${version.frontend}</version></plugin>
+  </plugins></pluginManagement></build>
+</project>

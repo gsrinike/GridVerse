@@ -1,0 +1,3 @@
+package eu.gridverse.srv.rsa.services;
+import eu.gridverse.powsbl.config.PowsyblAdapterConfiguration; import eu.gridverse.infra.config.InfrastructureAdapterConfiguration; import org.springframework.boot.SpringApplication; import org.springframework.boot.autoconfigure.SpringBootApplication; import org.springframework.context.annotation.Import;
+@SpringBootApplication @Import({PowsyblAdapterConfiguration.class,InfrastructureAdapterConfiguration.class}) public class RsaServicesApplication { public static void main(String[] args) { System.setProperty("MODULE", "srv.rsa.services"); SpringApplication.run(RsaServicesApplication.class, args); } }

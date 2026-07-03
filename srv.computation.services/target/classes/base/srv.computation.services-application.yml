@@ -1,0 +1,13 @@
+server: {port: 8082}
+spring: {application: {name: srv.computation.services}}
+springdoc: {swagger-ui: {url: /openapi/computation-services.yaml}}
+powsybl:
+  services:
+    network-store-server:
+      base-uri: "${POWSYBL_SERVICES_NETWORK_STORE_SERVER_BASE_URI:}"
+  loadflow:
+    voltage-init-mode: UNIFORM_VALUES
+    use-reactive-limits: true
+    phase-shifter-regulation-on: false
+    distributed-slack: false
+    balance-type: PROPORTIONAL_TO_LOAD

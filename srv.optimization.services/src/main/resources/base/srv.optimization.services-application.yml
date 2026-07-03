@@ -1,0 +1,10 @@
+server: {port: 8083}
+spring: {application: {name: srv.optimization.services}}
+springdoc: {swagger-ui: {url: /openapi/optimization-services.yaml}}
+gridverse:
+  solver:
+    executable: ${SCIP_EXECUTABLE:scip}
+    time-limit-seconds: ${SCIP_TIME_LIMIT_SECONDS:300}
+    gap-tolerance: ${SCIP_GAP_TOLERANCE:0.001}
+    threads: ${SCIP_THREADS:1}
+    fallback-enabled: false

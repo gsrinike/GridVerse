@@ -1,0 +1,6 @@
+package eu.gridverse.mock.srv.cnm.services;
+import eu.gridverse.data.cnm.common.*; import eu.gridverse.data.cnm.cgmes.*; import eu.gridverse.data.cnm.iidm.CnmNetworkSummary; import java.time.Instant; import java.util.*; import org.springframework.boot.SpringApplication; import org.springframework.boot.autoconfigure.SpringBootApplication; import org.springframework.web.bind.annotation.*; import org.springframework.web.multipart.MultipartFile;
+@SpringBootApplication public class MockCnmServicesApplication {
+    public static void main(String[] args) { SpringApplication.run(MockCnmServicesApplication.class, args); }
+    @RestController @RequestMapping("/api/v1/cnm/imports") static class Api { @PostMapping CnmImportOutcome upload(@RequestParam UUID importId, @RequestParam MultipartFile file) { var status = new ImportStatus(importId, ImportState.STORED, List.of(new ImportFileStatus(Objects.requireNonNullElse(file.getOriginalFilename(), "model.zip"), ImportFileState.STORED, file.getSize(), "mock stored")), Instant.now()); var network = new NetworkImportResult(importId,true,"00000000-0000-0000-0000-000000000001",new CnmNetworkSummary("mock",1,2,3,4,5,6,7),List.of()); return new CnmImportOutcome(status,network); } }
+}

@@ -1,0 +1,2 @@
+server: {port: 9084}
+spring: {application: {name: mock.srv.rsa.services}}

@@ -1,0 +1,6 @@
+openapi: 3.0.3
+info: {title: GridVerse RSA Services, version: 1.0.0}
+paths:
+  /api/v1/rsa/workflows: {post: {summary: Create RSA workflow, responses: {'200': {description: Workflow}}}}
+  /api/v1/rsa/workflows/{id}/actions: {post: {summary: Apply proposed PST actions, parameters: [{in: path, name: id, required: true, schema: {type: string, format: uuid}}], responses: {'200': {description: Applied actions}}}}
+  /api/v1/rsa/workflows/comparison: {post: {summary: Build before/after visualization data, responses: {'200': {description: Comparison}}}}

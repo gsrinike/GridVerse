@@ -1,0 +1,11 @@
+openapi: 3.0.3
+info: {title: GridVerse Optimization Services, version: 1.0.0}
+paths:
+  /api/v1/optimizations/rao:
+    post:
+      summary: Solve preventive PST remedial-action optimization
+      responses: {'200': {description: Proposed remedial actions and objective}}
+  /api/v1/optimizations/rao/profile-package:
+    post:
+      summary: Validate PST CSV ZIP, assemble the RAO model, and solve it
+      responses: {'200': {description: Proposed remedial actions and objective}}

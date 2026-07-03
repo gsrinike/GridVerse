@@ -1,0 +1,5 @@
+eu/gridverse/srv/optimization/services/api/OptimizationController.class
+eu/gridverse/srv/optimization/services/profile/PstProfilePackageParser.class
+eu/gridverse/srv/optimization/services/config/OptimizationConfiguration.class
+eu/gridverse/srv/optimization/services/service/OptimizationService.class
+eu/gridverse/srv/optimization/services/OptimizationServicesApplication.class

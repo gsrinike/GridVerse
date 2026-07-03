@@ -1,0 +1,14 @@
+server: {port: 8084}
+spring: {application: {name: srv.rsa.services}}
+springdoc: {swagger-ui: {url: /openapi/rsa-services.yaml}}
+powsybl:
+  services:
+    network-store-server:
+      base-uri: "${POWSYBL_SERVICES_NETWORK_STORE_SERVER_BASE_URI:}"
+gridverse:
+  messaging:
+    rabbitmq-host: ${RABBITMQ_HOST:localhost}
+  metadata:
+    jdbc-url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/gridverse}
+    username: ${POSTGRES_USER:gridverse}
+    password: ${POSTGRES_PASSWORD:gridverse-local}

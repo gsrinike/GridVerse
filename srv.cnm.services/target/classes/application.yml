@@ -1,0 +1,6 @@
+spring:
+  config:
+    import:
+      - classpath:base/srv.cnm.services-application.yml
+      - classpath:base/srv.cnm.services-infra.yml
+      - optional:classpath:local/srv.cnm.services-application.yml

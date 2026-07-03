@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info: {title: GridVerse CNM Services, version: 1.0.0}
+paths:
+  /api/v1/cnm/imports:
+    post:
+      summary: Upload a CGMES RDF or ZIP package
+      operationId: uploadCnm
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [importId, file]
+              properties:
+                importId: {type: string, format: uuid}
+                file: {type: string, format: binary}
+      responses:
+        '200': {description: Stored import}

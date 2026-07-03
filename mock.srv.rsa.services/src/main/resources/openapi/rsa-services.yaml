@@ -1,0 +1,3 @@
+openapi: 3.0.3
+info: {title: GridVerse Mock RSA Services, version: 1.0.0}
+paths: {/api/v1/rsa/workflows/comparison: {post: {responses: {'200': {description: Deterministic comparison}}}}}

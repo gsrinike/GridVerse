@@ -1,0 +1,3 @@
+openapi: 3.0.3
+info: {title: GridVerse Mock CNM Services, version: 1.0.0}
+paths: {/api/v1/cnm/imports: {post: {responses: {'200': {description: Deterministic stored result}}}}}

@@ -1,0 +1,9 @@
+eu/gridverse/srv/cnm/services/rdf/SafeArchiveExpander.class
+eu/gridverse/srv/cnm/services/api/CnmImportController.class
+eu/gridverse/srv/cnm/services/config/CnmConfiguration$2.class
+eu/gridverse/srv/cnm/services/config/CnmConfiguration$1.class
+eu/gridverse/srv/cnm/services/CnmServicesApplication.class
+eu/gridverse/srv/cnm/services/rdf/ProfileFilenameParser.class
+eu/gridverse/srv/cnm/services/rdf/SafeArchiveExpander$Payload.class
+eu/gridverse/srv/cnm/services/config/CnmConfiguration.class
+eu/gridverse/srv/cnm/services/service/CnmImportService.class

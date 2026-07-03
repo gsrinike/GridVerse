@@ -1,0 +1,4 @@
+eu/gridverse/srv/computation/services/ComputationServicesApplication.class
+eu/gridverse/srv/computation/services/service/ComputationService.class
+eu/gridverse/srv/computation/services/api/ComputationController.class
+eu/gridverse/srv/computation/services/config/ComputationConfiguration.class

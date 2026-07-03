@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: srv.cnm.services
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
+springdoc:
+  swagger-ui:
+    url: /openapi/cnm-services.yaml
+powsybl:
+  services:
+    network-store-server:
+      base-uri: "${POWSYBL_SERVICES_NETWORK_STORE_SERVER_BASE_URI:}"

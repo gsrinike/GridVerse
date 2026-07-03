@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: eu.gridverse.srv.optimization.services.service.OptimizationServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.188 s -- in eu.gridverse.srv.optimization.services.service.OptimizationServiceTest

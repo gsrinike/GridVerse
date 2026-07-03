@@ -1,0 +1,18 @@
+modules:
+  - com.utils
+  - com.mapping
+  - com.infra
+  - com.auth
+  - com.vault
+  - data.cnm
+  - com.powsbl
+  - com.solver
+  - srv.cnm.services
+  - mock.srv.cnm.services
+  - srv.computation.services
+  - srv.optimization.services
+  - srv.rsa.services
+  - mock.srv.rsa.services
+  - gui.common
+  - gui.cnm.manage
+  - gui.rsa

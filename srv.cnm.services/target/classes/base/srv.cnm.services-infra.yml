@@ -1,0 +1,10 @@
+gridverse:
+  storage:
+    object-endpoint: ${MINIO_ENDPOINT:http://localhost:9000}
+    object-access-key: ${MINIO_ACCESS_KEY:gridverse}
+    object-secret-key: ${MINIO_SECRET_KEY:gridverse-local-secret}
+    document-endpoint: ${ELASTICSEARCH_URL:http://localhost:9200}
+  messaging:
+    rabbitmq-host: ${RABBITMQ_HOST:localhost}
+  metadata:
+    jdbc-url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/gridverse}

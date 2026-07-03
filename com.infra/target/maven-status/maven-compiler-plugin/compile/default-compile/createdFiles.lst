@@ -1,0 +1,10 @@
+eu/gridverse/infra/storage/object/ObjectStorageService.class
+eu/gridverse/infra/metadata/MetadataRepository.class
+eu/gridverse/infra/event/rabbitmq/RabbitMqEventPublisher.class
+eu/gridverse/infra/storage/document/DocumentSearchRequest.class
+eu/gridverse/infra/storage/document/elasticsearch/ElasticsearchDocumentRepository.class
+eu/gridverse/infra/storage/document/DocumentRepositoryService.class
+eu/gridverse/infra/storage/object/minio/MinioObjectStorageService.class
+eu/gridverse/infra/bpm/BusinessProcessService.class
+eu/gridverse/infra/event/EventPublisherService.class
+eu/gridverse/infra/config/InfrastructureAdapterConfiguration.class
